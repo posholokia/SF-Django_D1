@@ -1,0 +1,17 @@
+{% extends 'flatpages/default.html' %}
+<!-- Убираем скролл -->
+{% block header %}
+{% endblock header %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+<!-- Меняем размер и стиль шрифта -->
+<div style="font-size: 130%; font-family: 'Calibri'">
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+    {{ flatpage.content }}
+</div>
+{% endblock content %}
